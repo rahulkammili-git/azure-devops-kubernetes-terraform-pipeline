@@ -24,7 +24,7 @@ stages:
       displayName: Build an image
       inputs:
         containerRegistry: 'DevOpsToDockerHub'
-        repository: 'kubernetespoc'
+        repository: 'rahulkammili/kubernetespoc'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
