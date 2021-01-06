@@ -1,3 +1,9 @@
+provider "azurerm" {
+  # Whilst version is optional, we /strongly recommend/ using it to pin the version of the Provider being used
+  version = "=2.4.0"
+  features {}
+}
+
 resource "azurerm_resource_group" "resource_group" {
   name     = "${var.resource_group}_${var.environment}"
   location = var.location
