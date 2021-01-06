@@ -9,7 +9,7 @@ steps:
 - task: DownloadSecureFile@1
   name: publickey
   inputs:
-    secureFile: 'poc.pem'
+    secureFile: 'pocpublic.pem'
 - task: TerraformCLI@0
   inputs:
     command: 'init'
